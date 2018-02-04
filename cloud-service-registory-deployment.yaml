@@ -13,12 +13,12 @@ spec:
     metadata:
       labels:
         app: cloud-service-registory
-	  namespace: default
+      namespace: default
     spec:
       containers:
-		- name: cloud-service-registory
-		  image: njsingh/purple-cloud-service-registory:latest
-		  ports:
-			- containerPort: 8163
-	  imagePullSecrets:
-		- name: regsecret
+	- name: cloud-service-registory
+	  image: njsingh/purple-cloud-service-registory:latest
+	  ports:
+	     - containerPort: 8163
+      imagePullSecrets:
+	- name: regsecret
