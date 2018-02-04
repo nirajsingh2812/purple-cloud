@@ -22,4 +22,3 @@ spec:
 			- containerPort: 8163
 	  imagePullSecrets:
 		- name: regsecret
-	  
