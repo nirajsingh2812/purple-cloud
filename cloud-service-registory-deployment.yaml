@@ -5,8 +5,6 @@ metadata:
     app: cloud-service-registory
   name: cloud-service-registory-deployment
 spec: 
-  matchLabels: 
-    app: cloud-service-registory
   replicas: 3
   selector: 
     matchLabels: 
