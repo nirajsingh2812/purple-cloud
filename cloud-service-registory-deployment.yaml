@@ -1,24 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
-  name: cloud-service-registory-deployment
-  labels:
+metadata: 
+  labels: 
     app: cloud-service-registory
-spec:
+  name: cloud-service-registory-deployment
+spec: 
+  matchLabels: 
+    app: cloud-service-registory
   replicas: 3
-  selector:
-    matchLabels:
+  selector: 
+    matchLabels: 
       app: cloud-service-registory
-  template:
-    metadata:
-      labels:
+  template: 
+    metadata: 
+      labels: 
         app: cloud-service-registory
-      namespace: default
-    spec:
-      containers:
-	- name: cloud-service-registory
-	  image: njsingh/purple-cloud-service-registory:latest
-	  ports:
-	     - containerPort: 8163
-      imagePullSecrets:
-	- name: regsecret
+      name: cloud-service-registory-deployment
+      spec: 
+        containers: 
+          - image: "njsingh/purple-cloud-service-registory:latest"
+            name: cloud-service-registory
+            ports: 
+              - containerPort: 80
+        imagePullSecret: 
+          name: regsecret
