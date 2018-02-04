@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
+  name: cloud-service-registory-deployment
   labels: 
     app: cloud-service-registory
-  name: cloud-service-registory-deployment
 spec: 
   replicas: 3
   selector: 
