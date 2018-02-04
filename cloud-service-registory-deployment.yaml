@@ -8,7 +8,7 @@ metadata:
 spec:
  containers:
   - name: service-registory
-    image: njsingh/purple-cloud-service-registory:latest
+    image: njsingh/purple-cloud-service-registory:v1
     ports: 
      - containerPort: 8163
  imagePullSecrets:
