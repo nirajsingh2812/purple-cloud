@@ -4,6 +4,9 @@ metadata:
   name: mssql-deployment
 spec:
   replicas: 2
+  selector:
+    matchLabels:
+      app: mssql
   template:
     metadata:
       labels:
