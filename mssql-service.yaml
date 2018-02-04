@@ -5,8 +5,9 @@ metadata:
 spec:
   selector:
     app: mssql
+  type: NodePort
   ports:
     - protocol: TCP
       port: 1433
       targetPort: 1433
-  type: LoadBalancer
+      nodePort: 30002
