@@ -8,6 +8,6 @@ spec:
  selector:
   app: cloud-service-registory
  ports:
-  - protocol: http
+  - protocol: TCP
     port: 80
     targetPort: 8163
