@@ -9,6 +9,8 @@ spec:
   app: cloud-service-registory
  type: NodePort
  ports:
-  - protocol: TCP
-    port: 8163
+  - name: http
+    protocol: TCP
+    port: 80
     targetPort: 8163
+    nodePort: 8163
